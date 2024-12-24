@@ -320,3 +320,71 @@ svg{
 .name_me{
   color: #7a21b6;
 }
+.stacks{
+  height: 100vh;
+  width: 1080px;
+  margin: 0 auto;
+}
+.stacks h1{
+  text-align: center;
+  font-size: 80px;
+}
+.stacks span{
+            background: linear-gradient(90deg, rgba(252,0,255,1) 5%, rgba(0,219,222,1) 95%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+}
+.stacks_container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Colunas ajustáveis */
+  grid-auto-rows: 150px; /* Altura fixa para cada linha */
+  gap: 10px; /* Espaçamento entre os itens */
+  padding: 20px;
+
+}
+.stack{
+  border-radius: 5px;
+  height: 150px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stack svg{
+  width: 100px;
+}
+.stack:hover{
+  border: 1px solid rgb(47, 0, 255);
+  transition: 0.2s;
+}
+footer{
+  background-color: #1e1e1e;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  height: 60px;
+  align-items: center;
+}
+
+footer h1{
+  font-size: 10px;
+}
+.btn_resume{
+  height: 50px;
+  width: 100px;
+}
+.button_con{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.div_2 span{
+  color: #7a21b6;
+}
+.div_2 span:hover{
+  color: blue;
+  transition: 0.2s;
+}
