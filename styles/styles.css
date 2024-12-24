@@ -1,7 +1,12 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
+  font-family: "Poppins", serif;
     padding: 0;
     margin: 0;
+}
+body{
+  background-color: rgb(255, 255, 255);
 }
 body.dark {
     background: #070707;
@@ -114,8 +119,7 @@ body.dark {
   }
   .text_infos{
     width: 100%;
-    padding: 20px;
-    margin-top: 50px;
+    padding: 10px;
   }
   .text_infos p{
     font-size: 50px;
@@ -237,4 +241,71 @@ body.dark {
   .wrapper .instagram:hover .tooltip::before {
     background: #7a21b6;
     color: #ffffff;
+  }
+  .projects_cont{
+    height: 100vh;
+    margin: 0 auto;
+    width: 1080px;
+  }
+  .projects_cont h1{
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 50px;
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.items_cont{
+    display: flex;
+}
+.project {
+    background-color: #1e1e1e;
+    border: 1px solid;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 250px;
+    box-sizing: border-box;
+}
+.project:hover {
+    border-color: #007bff;
+    transition: 0.2s;
+}
+.project h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.project p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+.project a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+.project a {
+    color: #ffffff;
+    &:hover{
+      color: #007bff;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+svg{
+    height: 100px;
+    width: 50px;
+}
+  .projects h1{
+      font-size: 2.5em;
+      margin-bottom: 20px;
   }
