@@ -62,3 +62,19 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
+document.getElementById("downloadBtn").addEventListener("click", function () {
+  const content = "This is the content of the document.";
+  const filename = "Israel-CurriculoAtualizado2024.docx"; // File name only, no path
+
+  const blob = new Blob([content], { type: "text/plain" });
+
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename; // Correctly specify only the file name
+
+  a.click();
+
+  URL.revokeObjectURL(url);
+});
